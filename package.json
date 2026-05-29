@@ -7,7 +7,8 @@
   "type": "module",
   "main": "src/index.ts",
   "scripts": {
-    "start": "node src/index.ts"
+    "start": "node src/index.ts",
+    "test": "node -e \"const path = require('node:path'); const root = process.env.INIT_CWD || process.cwd(); require(path.join(root, 'tests', 'test-example.cjs'));\""
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
